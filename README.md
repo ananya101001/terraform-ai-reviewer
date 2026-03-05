@@ -71,7 +71,7 @@ Input: Terraform (.tf files)
 | Layer | Technology |
 |---|---|
 | **Agents** | LangGraph |
-| **LLM** | Qwen 3 Coder (via UncloseAI — free) |
+| **LLM** | Qwen 3 Coder |
 | **RAG** | LlamaIndex + ChromaDB |
 | **Memory** | Mem0 |
 | **MCP Server** | FastAPI |
