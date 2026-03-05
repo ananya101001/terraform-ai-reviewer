@@ -4,6 +4,7 @@
 
 ![Architecture](assets/architecture.png)
 
+
 [![Python](https://img.shields.io/badge/Python-3.11+-blue?logo=python)](https://python.org)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Multi--Agent-orange)](https://langchain-ai.github.io/langgraph/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit)](https://streamlit.io)
@@ -11,7 +12,7 @@
 
 ---
 
-## 🎯 What It Does
+##  What It Does
 
 Upload any Terraform (`.tf`) files → **5 specialized AI agents** analyze your infrastructure in parallel → get a structured review report with security risks, cost breakdowns, and actionable fixes — in under 60 seconds.
 
@@ -19,7 +20,7 @@ This project mirrors real-world cloud architecture review workflows used at AWS,
 
 ---
 
-## 🏛️ Architecture
+##  Architecture
 
 ```
 Input: Terraform (.tf files)
@@ -27,41 +28,41 @@ Input: Terraform (.tf files)
     ┌─────────────────────────────────────────┐
     │           Orchestrator (LangGraph)       │
     │                                         │
-    │  🔍 IaC Parser Agent                    │
+    │   IaC Parser Agent                    │
     │       └── python-hcl2                   │
     │                                         │
-    │  🔐 Security Agent                      │
+    │   Security Agent                      │
     │       └── Checkov + LLM analysis        │
     │                                         │
-    │  💰 Cost Agent                          │
+    │   Cost Agent                          │
     │       └── LLM cost estimation           │
     │                                         │
-    │  📋 Best Practices Agent                │
+    │   Best Practices Agent                │
     │       └── Well-Architected RAG          │
     │                                         │
-    │  ✍️  Writer Agent                       │
+    │   Writer Agent                       │
     │       └── Final report compiler         │
     └─────────────────────────────────────────┘
               ↓
     Output: Structured Review Report
 ```
+![Architecture](assets/architecture2.png)
+---
+
+##  Features
+
+- ** 5 Specialized Agents** — each agent focuses on one domain (security, cost, best practices, parsing, writing)
+- **Security Scanning** — powered by Checkov, detects 1000+ misconfigurations
+- ** Cost Analysis** — estimates monthly AWS spend and suggests right-sizing
+- ** Well-Architected Review** — covers all 6 pillars (Security, Reliability, Cost, Performance, Operations, Sustainability)
+- ** RAG Grounded** — responses grounded in AWS documentation, not hallucinated
+- ** Persistent Memory** — remembers org conventions and team preferences via Mem0
+- ** Downloadable Reports** — export full review as Markdown
+- ** Web UI** — clean Streamlit interface, upload any `.tf` file
 
 ---
 
-## ✨ Features
-
-- **🤖 5 Specialized Agents** — each agent focuses on one domain (security, cost, best practices, parsing, writing)
-- **🔐 Security Scanning** — powered by Checkov, detects 1000+ misconfigurations
-- **💰 Cost Analysis** — estimates monthly AWS spend and suggests right-sizing
-- **📋 Well-Architected Review** — covers all 6 pillars (Security, Reliability, Cost, Performance, Operations, Sustainability)
-- **🧠 RAG Grounded** — responses grounded in AWS documentation, not hallucinated
-- **💾 Persistent Memory** — remembers org conventions and team preferences via Mem0
-- **⬇️ Downloadable Reports** — export full review as Markdown
-- **🌐 Web UI** — clean Streamlit interface, upload any `.tf` file
-
----
-
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -76,7 +77,7 @@ Input: Terraform (.tf files)
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the repo
 ```bash
@@ -117,7 +118,7 @@ Open `http://localhost:8501` and click **"Run on Sample Terraform"** 🎉
 
 ---
 
-## 📸 Demo
+##  Demo
 
 ### Sample Output
 The sample Terraform file contains **6 intentional issues** for demo purposes:
@@ -133,7 +134,7 @@ The sample Terraform file contains **6 intentional issues** for demo purposes:
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 terraform-ai-reviewer/
@@ -158,7 +159,7 @@ terraform-ai-reviewer/
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [x] Week 1 — Multi-agent workflow (LangGraph)
 - [x] Week 1 — IaC Parser, Security, Cost, Best Practices agents
@@ -169,16 +170,8 @@ terraform-ai-reviewer/
 
 ---
 
-## 🔑 API Keys
 
-| Service | Link | Cost |
-|---|---|---|
-| UncloseAI (Qwen LLM) | [uncloseai.com](https://uncloseai.com) | **Free** |
-| Mem0 (Memory) | [mem0.ai](https://mem0.ai) | Free tier |
-
----
-
-## 🤝 Inspired By
+##  Inspired By
 
 This project is inspired by real-world Multi-Agent GenAI workflows used in production cloud engineering — combining **RAG grounding**, **MCP tool servers**, and **persistent memory** to build reliable, hallucination-resistant AI systems.
 
@@ -190,4 +183,4 @@ MIT License — free to use, modify, and distribute.
 
 ---
 
-<p align="center">Built with ❤️ using LangGraph + Qwen + Checkov</p>
+<p align="center">Built by Ananya Praveen Shetty</p>
