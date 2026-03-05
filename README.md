@@ -177,10 +177,4 @@ This project is inspired by real-world Multi-Agent GenAI workflows used in produ
 
 ---
 
-## 📄 License
-
-MIT License — free to use, modify, and distribute.
-
----
-
 <p align="center">Built by Ananya Praveen Shetty</p>
