@@ -51,14 +51,14 @@ Input: Terraform (.tf files)
 
 ##  Features
 
-- ** 5 Specialized Agents** — each agent focuses on one domain (security, cost, best practices, parsing, writing)
+- **5 Specialized Agents** — each agent focuses on one domain (security, cost, best practices, parsing, writing)
 - **Security Scanning** — powered by Checkov, detects 1000+ misconfigurations
-- ** Cost Analysis** — estimates monthly AWS spend and suggests right-sizing
-- ** Well-Architected Review** — covers all 6 pillars (Security, Reliability, Cost, Performance, Operations, Sustainability)
-- ** RAG Grounded** — responses grounded in AWS documentation, not hallucinated
-- ** Persistent Memory** — remembers org conventions and team preferences via Mem0
-- ** Downloadable Reports** — export full review as Markdown
-- ** Web UI** — clean Streamlit interface, upload any `.tf` file
+- **Cost Analysis** — estimates monthly AWS spend and suggests right-sizing
+- **Well-Architected Review** — covers all 6 pillars (Security, Reliability, Cost, Performance, Operations, Sustainability)
+- **RAG Grounded** — responses grounded in AWS documentation, not hallucinated
+- **Persistent Memory** — remembers org conventions and team preferences via Mem0
+- **Downloadable Reports** — export full review as Markdown
+- **Web UI** — clean Streamlit interface, upload any `.tf` file
 
 ---
 
