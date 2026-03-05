@@ -2,6 +2,10 @@
 
 > **Multi-Agent AI system that automatically reviews Terraform infrastructure for security vulnerabilities, cost optimization, and AWS Well-Architected best practices.**
 
+live link: https://terraform-ai-reviewer-cjuwvjvvhqxsxg8q9znqub.streamlit.app/
+
+Medium article link: https://medium.com/@ananyapraveen.shetty/i-built-a-multi-agent-ai-system-that-reviews-terraform-infrastructure-in-60-seconds-5c3c6bf8c813 
+
 ![Architecture](assets/architecture.png)
 
 
