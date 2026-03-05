@@ -1,3 +1,10 @@
-echo ".env" >> .gitignore
-echo "venv/" >> .gitignore
-git add .gitignore
+cat > .gitignore << EOF
+.env
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+rag/chroma_db/
+*.egg-info/
+.pytest_cache/
+EOF
