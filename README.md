@@ -127,6 +127,9 @@ Open `http://localhost:8501` and click **"Run on Sample Terraform"** 🎉
 ### Sample Output
 The sample Terraform file contains **6 intentional issues** for demo purposes:
 
+![Output](assets/output2.png)
+![output](assets/output1.png)
+
 | Issue | Type | Severity |
 |---|---|---|
 | S3 bucket with public ACL | Security | 🔴 Critical |
